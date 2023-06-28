@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #111111c7;
+}
+ul li {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.btn {
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 2px solid rgba(102, 16, 16, 0.973);
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color:rgba(102, 16, 16, 0.973) ;
+}
+.none {
+    display: none;
+}
+/* ============== NAV ============= */
+.nav {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.logo__name {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.logo__name span {
+    color: rgba(102, 16, 16, 0.973);
+    font-size: 35px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav__link {
+    position: relative;
+    font-weight: 500;
+}
+.nav__link:hover {
+    color: rgba(102, 16, 16, 0.973);
+}
+.nav__link::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(102, 16, 16, 0.973);
+    left: 0;
+    bottom: -5px;
+    transition: .2s linear;
+}
+
+.nav__link:hover:after {
+    width: 100%;
+}
+
+/* ============ header ============= */
+
+.header__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header__nuw-single {
+    font-size: 30px;
+}
+
+.header__single-name {
+    font-size: 58px;
+    font-family: 500;
+}
+.header__audio  {
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    width: 100%;
+    height: 35px;
+}
+.header__img  img {
+    border-radius: 10px;
+}
+
+/* ================ about-us ============== */
+
+.about-us {
+    margin: 80px;
+}
+
+.about__us-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.about__us-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about__us-info-img {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.about__us-info-img img {
+    width: 50px;
+    height: 50px;
+}
+
+.about__us-name {
+    font-size: 48px;
+}
+
+.about__us-text {
+    max-width: 700px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 25px;
+    line-height: 1.2;
+}
+.about__top-song {
+    font-size: 25px;
+    font-weight: 700;
+}
+.about__us-table {
+    width: 70%;
+    padding: 25px;
+}
+
+.about__us-table td {
+    padding: 10px;
+}
+
+.about__us-img img {
+    height: 700px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+/* ============ section__title ============ */
+
+.section__title {
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.concerts__wrep {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.concerts__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 25px;
+}
+
+.concerts__country {
+    font-weight: 700;
+    color: #ccc;
+}
+
+.concerts__adres {
+    font-size: 18px;
+
+}
+.concerts__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.concerts__btn {
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.concerts__btn:hover {
+    background-color: rgb(15, 15, 209);
+}
+
+.concerts-button {
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 2px solid rgb(15, 15, 209);
+    background: inherit;
+    cursor: pointer;
+    color: #fff;
+    transition: .2s linear;
+}
+
+.concerts-button:hover{
+    background-color: rgb(15, 15, 209);
+}
+
+.contact {
+    padding: 55px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact__meneger-name,
+.contact__meneger__elmail {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 25px;
+}
+
+.contact__meneger__emal-adres:hover {
+    color: rgba(102, 16, 16, 0.973);
+}
+
+.contact__soc {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.contact__soc-link {
+    border: 1px solid rgba(102, 16, 16, 0.973);
+    border-radius: 50%;
+}
+.contact__soc-link:hover {
+    background-color:  rgba(102, 16, 16, 0.973);
+}
+.contact__soc-link i {
+    color:  rgba(102, 16, 16, 0.973);
+    font-size: 20px;
+    padding: 10px;
+    transition: .2s linear;
+}
+.contact__soc-link i:hover{
+    color: #fff;
+}
+
+.form__ticket {
+    position: fixed;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #ffffff77;
+    padding: 20px;
+    box-shadow: 5px 15px 15px #2222;
+    border-radius: 14px;
+    left: 20%;
+    top: 15px;
+    z-index: 555;
+    
+}
+.form__title-close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.clous {
+    border: none;
+    background-color: inherit;
+    font-size: 35px;
+    cursor: pointer;
+
+}
+.form__ticket h2 {
+    color: #222222f6;
+    text-align: center;
+}
+
+.user {
+    padding: 12px 5px;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.select__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.ticket__data {
+    color: #271f1f;
+    padding: 12px ;
+    font-size: 18px;
+}
+.ticket__data option {
+    font-size: 18px;
+}
+.ticket__button {
+    text-align: center;
+}
+
+.ticket__btn {
+    width: 200px;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: 2px solid rgba(102, 16, 16, 0.973);
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .2s linear;
+}
+.ticket__btn:hover {
+    background-color: rgba(102, 16, 16, 0.973);
+}
+
+
+
